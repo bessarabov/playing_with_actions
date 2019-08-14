@@ -17,3 +17,11 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: env
     - run: git remote -v
+    - run: touch a.txt
+    - run: git add a.txt
+    - run: git status
+    - run: git commit -m 'Commit'
+    - name: smth
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: git push origin master
