@@ -12,5 +12,8 @@ jobs:
     - run: pwd
     - run: ls -la /home/runner/work/
     - run: ls -la /
-    - run: env
+    - name: smth
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: env
     - run: git remote -v
