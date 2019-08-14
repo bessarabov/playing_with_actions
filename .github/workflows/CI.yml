@@ -11,8 +11,6 @@ jobs:
     - uses: actions/checkout@master
     - run: pwd
     - run: ls -la /home/runner/work/
-    - run: echo $GITHUB_SHA
-    - run: echo $GITHUB_REF
-    - run: echo $GITHUB_TOKEN
+    - run: ls -la /
     - run: env
     - run: git remote -v
