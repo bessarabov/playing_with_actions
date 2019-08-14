@@ -12,7 +12,7 @@ jobs:
     - run: pwd
     - run: ls -la /home/runner/work/
     - run: ls -la /
-    - name: smth2
+    - name: smth
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: env
@@ -23,7 +23,7 @@ jobs:
     - run: git config --global user.email "you@example.com"
     - run: git config --global user.name "Your Name"
     - run: git commit -m 'Commit'
-    - name: smth2
+    - name: smth
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: git push origin master
