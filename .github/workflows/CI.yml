@@ -22,6 +22,7 @@ jobs:
     - run: git status
     - run: git config --global user.email "you@example.com"
     - run: git config --global user.name "Your Name"
+    - run: git checkout -b master
     - run: git commit -m 'Commit'
     - name: smth
       env:
