@@ -24,7 +24,10 @@ jobs:
     - run: git config --global user.name "Your Name"
     - run: git checkout -b master
     - run: git commit -m 'Commit'
+    - run: git remote rm origin
     - name: smth
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: git push origin master
+      run: git remote add origin https://bessarabov@$GITHUB_TOKEN@github.com/bessarabov/playing_with_actions
+    - run: git remote -v
+    - run: git push origin master
