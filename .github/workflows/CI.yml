@@ -23,7 +23,7 @@ jobs:
     - run: git config --global user.email "you@example.com"
     - run: git config --global user.name "Your Name"
     - run: git commit -m 'Commit'
-    - name: smth
+    - name: smth2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: git push origin master
